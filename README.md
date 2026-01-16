@@ -31,7 +31,7 @@ Then point your OpenCode config at the built file:
 
 ```json
 {
-  "plugin": ["file:///absolute/path/to/opencode-comments-plugin/dist/index.js"]
+  "plugin": ["opencode-comments-plugin"]
 }
 ```
 
