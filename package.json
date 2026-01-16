@@ -1,39 +1,37 @@
 {
-  "name": "opencode-comments-plugin",
-  "version": "0.1.0",
-  "description": "OpenCode plugin that warns on new comments/docstrings using comment-checker",
-  "author": "YeonGyu-Kim",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/code-yeongyu/opencode-comments-plugin"
-  },
-  "bugs": {
-    "url": "https://github.com/code-yeongyu/opencode-comments-plugin/issues"
-  },
-  "homepage": "https://github.com/code-yeongyu/opencode-comments-plugin#readme",
-  "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
-    }
-  },
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "bun build src/index.ts --outdir dist --target bun --format esm && tsc --emitDeclarationOnly",
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@code-yeongyu/comment-checker": "^0.7.0",
-    "@opencode-ai/plugin": "^1.0.162"
-  },
-  "devDependencies": {
-    "bun-types": "latest",
-    "typescript": "^5.7.3"
-  },
-  "license": "MIT"
+	"name": "opencode-comments-plugin",
+	"version": "0.1.0",
+	"description": "OpenCode plugin that warns on new comments/docstrings using comment-checker",
+	"author": "YeonGyu-Kim",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ajoslin/opencode-comments-plugin"
+	},
+	"bugs": {
+		"url": "https://github.com/ajoslin/opencode-comments-plugin/issues"
+	},
+	"homepage": "https://github.com/ajoslin/opencode-comments-plugin#readme",
+	"type": "module",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
+	},
+	"files": ["dist"],
+	"scripts": {
+		"build": "bun build src/index.ts --outdir dist --target bun --format esm && tsc --emitDeclarationOnly",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@code-yeongyu/comment-checker": "^0.7.0",
+		"@opencode-ai/plugin": "^1.0.162"
+	},
+	"devDependencies": {
+		"bun-types": "latest",
+		"typescript": "^5.7.3"
+	},
+	"license": "MIT"
 }
