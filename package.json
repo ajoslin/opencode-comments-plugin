@@ -1,6 +1,6 @@
 {
 	"name": "opencode-comments-plugin",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"description": "OpenCode plugin that warns on new comments/docstrings using comment-checker",
 	"author": "YeonGyu-Kim",
 	"repository": {
@@ -20,7 +20,9 @@
 			"import": "./dist/index.js"
 		}
 	},
-	"files": ["dist"],
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"build": "bun build src/index.ts --outdir dist --target bun --format esm && tsc --emitDeclarationOnly",
 		"typecheck": "tsc --noEmit"
